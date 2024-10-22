@@ -5,7 +5,7 @@
 #Valor futuro en anualidades anticipadas teniendo: anualidad,tasa de interes,periodo y numero de plazo de anulidades 
 
 valorFuturoAnualidadesVencidas=function(A,r,t){
-  xSalida=A*((1+r)^t-1/t)
+  xSalida=A*(((1+r)^ t-1)/t)
   return(xSalida)
 }
 
