@@ -34,3 +34,23 @@ valorFuturo=valorFuturoAnualidadesVencidas(A=Anualidad,r=tasaPeriodo,t=nPeriodos
 # Imprimimos el resultado :
 valorFuturo
 ```
+
+### Calculo de la Anualidad en Anualidades Vencidas 
+
+Para ilustrar el ejemplo se tiene el siguiente ejercicio:
+$VF$=
+$i$=6.00% anualizado
+$r$=0.005% mensual
+$t$=60 meses
+
+Se realizan los cálculos:
+```{r}
+# Creamos objetos con valores de entrada
+Anualidad=1200
+tasaPeriodo=0.005
+nPeriodos=60
+# Calculamos el Valor Futuro:
+valorFuturo=valorFuturoAnualidadesVencidas(A=Anualidad,r=tasaPeriodo,t=nPeriodos)
+# Imprimimos el resultado :
+valorFuturo
+```
