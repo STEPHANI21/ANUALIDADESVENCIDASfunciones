@@ -1,11 +1,11 @@
 #Se presentan las funciones de interes simple 
 #Autor:Stephani Olvera Chavez 
-#V1.0 :20 de OCTUBRE de 2024
+#V1.0 :24 de OCTUBRE de 2024
 
 #Valor futuro en anualidades anticipadas teniendo: anualidad,tasa de interes,periodo y numero de plazo de anulidades 
 
 valorFuturoAnualidadesVencidas=function(A,r,t){
-  xSalida=A*(((1+r)^ t-1)/t)
+  xSalida=A*(((1+r)^t-1)/r)
   return(xSalida)
 }
 
@@ -13,7 +13,7 @@ valorFuturoAnualidadesVencidas=function(A,r,t){
 #Anualidad en anualidades vencidas teniendo:valor futuro ,tasa del periodo y numero de pagos.
 
 AnualidadAnualidadesVencidas=function(VF,r,t){
-  xSalida=VF*r/(1+r)^t-1
+  xSalida=VF/(((1+r)^t-1)/r)
   
   return(xSalida)
 }
@@ -154,7 +154,7 @@ tasaAnualidadVencidaVF=function(VF,A,Tpers,umbral=10*(10^-18)){
 #Valor actual en anualidades anticipadas teniendo: anualidad,tasa de interes,periodo y numero de plazo de anulidades 
 
 valorActualAnualidadesVencidas=function(A,r,t){
-  xSalida=A*(1-(1+r)^-t/r)
+  xSalida=A*((1-(1+r)^(-t))/r)
     
   return(xSalida)
 }
@@ -162,15 +162,15 @@ valorActualAnualidadesVencidas=function(A,r,t){
 #Anualidad en anualidades anticipadas teniendo: valor actual,tasa de interes,periodo y numero de plazo de anulidades 
 
 AnualidadAnualidadesVencidas=function(VA,r,t){
-  xSalida=(VA/(1-(1+r)^-t/r))
+  xSalida=(VA*r)/(1-(1+r)^(-t))
   
   return(xSalida)
 
 }
 
 #Numeros de pagos o plazo conociendo valor actual,anualidad,y tasa del periodo.
-tiempoPlazoAnualidadesVencidas=function(A,VF,r){
-  xSalida=(-log10(1-(VF*r/A))/log10(1+r))
+tiempoPlazoAnualidadesVencidas=function(A,VA,r){
+  xSalida=log10(A/(A-VA*r))/log10(1+r)
   
   return(xSalida)
 }
