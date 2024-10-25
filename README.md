@@ -98,14 +98,14 @@ Una compañia vende computadoras mediante pagos mensuales vencidos de $500.00 du
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
 $A$=500.00
 $i$=18.00% anualizado
-$r$=0.015% mensual
+$r$=0.01500002% mensual
 $t$=24 meses
 
 Se realizan los cálculos:
 ```{r}
 # Creamos objetos con valores de entrada
 Anualidad=500
-tasaPeriodo=0.015
+tasaPeriodo=0.01500002
 nPeriodos=24
 # Calculamos el Valor Actual:
 valorActual=valorActualAnualidadesVencidas(A=Anualidad,r=tasaPeriodo,t=nPeriodos)
@@ -124,7 +124,7 @@ Se realizan los cálculos:
 ```{r}
 # Creamos objetos con valores de entrada
 valorAct=10015.20
-tasaPeriodo=0.015
+tasaPeriodo=0.01500002
 nPeriodos=24
 # Calculamos la Anualidad:
 Anualidad=AnualidadAnualidadesVencidasA(VA=valorAct,r=tasaPeriodo,t=nPeriodos)
@@ -136,14 +136,14 @@ Anualidad
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
 $VA$=10015.20
 $i$=18.00% anualizado
-$r$=0.015% mensual
+$r$=0.01500002% mensual
 $A$=500
 
 Se realizan los cálculos:
 ```{r}
 # Creamos objetos con valores de entrada
 valorAct=10015.20
-tasaPeriodo=0.015
+tasaPeriodo=0.01500002
 Anualidad=500
 # Calculamos el tiempo:
 tiempo=tiempoPlazoAnualidadesVencidasA(VA=valorAct,r=tasaPeriodo,A=Anualidad)
