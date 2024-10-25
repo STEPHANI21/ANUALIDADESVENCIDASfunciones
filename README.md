@@ -54,7 +54,7 @@ Anualidad=AnualidadAnualidadesVencidasF(VF=valorFut,r=tasaPeriodo,t=nPeriodos)
 # Imprimimos el resultado :
 Anualidad
 ```
-### Calculo de la Numeros de pagos en Anualidades Vencidas 
+### Calculo de el Numeros de pagos en Anualidades Vencidas 
 
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
 $VF$=83724.0366
@@ -72,4 +72,22 @@ Anualidad=1200
 tiempo=tiempoPlazoAnualidadesVencidasF(VF=valorFut,r=tasaPeriodo,A=Anualidad)
 # Imprimimos el resultado :
 tiempo
+```
+### Calculo de la tasa del periodo en Anualidades Vencidas 
+
+Para ilustrar el ejemplo se tiene el siguiente ejercicio:
+$VF$=83724.0366
+$t$=60 meses
+$A$=1200
+
+Se realizan los cálculos:
+```{r}
+# Creamos objetos con valores de entrada
+valorFut=83724.0366
+nPeriodos=60
+Anualidad=1200
+# Calculamos el tasa:
+tasa=tasaAnualidadesVencidasVF(VF=valorFut,t=nPeriodos,A=Anualidad)
+# Imprimimos el resultado :
+tasa
 ```
