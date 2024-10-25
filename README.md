@@ -87,7 +87,7 @@ valorFut=83724.0366
 nPeriodos=60
 Anualidad=1200
 # Calculamos el tasa:
-tasa=tasaAnualidadesVencidasVF(VF=valorFut,t=nPeriodos,A=Anualidad)
+tasa=tasaAnualidadVencidaVF(VF=valorFut,t=nPeriodos,A=Anualidad)
 # Imprimimos el resultado :
 tasa
 ```
