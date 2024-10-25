@@ -91,7 +91,7 @@ tasa=tasaAnualidadVencidaVF(VF=valorFut,Tpers=nPeriodos,A=Anualidad)
 # Imprimimos el resultado :
 tasa
 ```
-### Calculo del Valor Actual en Anualidades Anticipadas
+### Calculo del Valor Actual en Anualidades Vencidas
 
  Una compañía alquila un terreno de $ 4 000 mensuales y propone al propietario pagar el alquiler anual al principio de año con la tasa del 12% capitalízatele mensualmente. Hallar el valor presente del alquiler.
 
@@ -111,4 +111,23 @@ nPeriodos=12
 valorActual=valorActualAnualidadesVencidas(A=Anualidad,r=tasaPeriodo,t=nPeriodos)
 # Imprimimos el resultado :
 valorActual
+```
+### Calculo de la Anualidad en Anualidades Vencidas
+
+Para ilustrar el ejemplo se tiene el siguiente ejercicio:
+$VA$=40020.31
+$i$=12.00% anualizado
+$r$=0.01% mensual
+$t$=12 meses
+
+Se realizan los cálculos:
+```{r}
+# Creamos objetos con valores de entrada
+valorAct=40020.31
+tasaPeriodo=0.01
+nPeriodos=12
+# Calculamos la Anualidad:
+Anualidad=AnualidadAnualidadesVencidasA(VA=valorAct,r=tasaPeriodo,t=nPeriodos)
+# Imprimimos el resultado :
+Anualidad
 ```
