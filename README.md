@@ -46,11 +46,11 @@ $t$=60 meses
 Se realizan los cálculos:
 ```{r}
 # Creamos objetos con valores de entrada
-valorFuturo=83724.0366
+valorFut=83724.0366
 tasaPeriodo=0.005
 nPeriodos=60
 # Calculamos la Anualidad:
-Anualidad=AnualidadAnualidadesVencidas(VF=valorFuturo,r=tasaPeriodo,t=nPeriodos)
+Anualidad=AnualidadAnualidadesVencidas(VF=valorFut,r=tasaPeriodo,t=nPeriodos)
 # Imprimimos el resultado :
 Anualidad
 ```
