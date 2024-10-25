@@ -124,7 +124,7 @@ Se realizan los cálculos:
 ```{r}
 # Creamos objetos con valores de entrada
 valorAct=10015.20
-tasaPeriodo=0.0152
+tasaPeriodo=0.0151
 nPeriodos=24
 # Calculamos la Anualidad:
 Anualidad=AnualidadAnualidadesVencidasA(VA=valorAct,r=tasaPeriodo,t=nPeriodos)
