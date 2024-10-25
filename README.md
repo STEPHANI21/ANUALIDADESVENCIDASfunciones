@@ -1,5 +1,5 @@
-# ANUALIDADES-VENCIDAS-
-FORMULAS DE ANUALIDADES VENCIDAS 
+# ANUALIDADES VENCIDAS
+FORMULAS DE ANUALIDADES VENCIDAS VF y VA
 # Compilación de funciones de matemáticas financieras 
 
 En este repositorio se agrupan las funciones y actividades informaticas realizadas en la materia de matemáticas financieras  de la licenciatura en Actuaria y Ciencia de Datos de la UMSNH.
