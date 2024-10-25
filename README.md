@@ -98,14 +98,14 @@ tasa
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
 $A$=4,000.00
 $i$=12.00% anualizado
-$r$=1.0% mensual
+$r$=0.01% mensual
 $t$=12 meses
 
 Se realizan los cálculos:
 ```{r}
 # Creamos objetos con valores de entrada
 Anualidad=4000
-tasaPeriodo=1.0
+tasaPeriodo=0.01
 nPeriodos=12
 # Calculamos el Valor Actual:
 valorActual=valorActualAnualidadesVencidas(A=Anualidad,r=tasaPeriodo,t=nPeriodos)
