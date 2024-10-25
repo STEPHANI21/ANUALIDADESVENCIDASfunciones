@@ -112,7 +112,7 @@ valorActual=valorActualAnualidadesVencidas(A=Anualidad,r=tasaPeriodo,t=nPeriodos
 # Imprimimos el resultado :
 valorActual
 ```
-### Calculo de la Anualidad en Anualidades Vencidas
+### Calculo de la Anualidad en Anualidades Vencidas CON VA
 
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
 $VA$=10015.20
@@ -124,10 +124,47 @@ Se realizan los cálculos:
 ```{r}
 # Creamos objetos con valores de entrada
 valorAct=10015.20
-tasaPeriodo=0.0151
+tasaPeriodo=0.015
 nPeriodos=24
 # Calculamos la Anualidad:
 Anualidad=AnualidadAnualidadesVencidasA(VA=valorAct,r=tasaPeriodo,t=nPeriodos)
 # Imprimimos el resultado :
 Anualidad
+```
+### Calculo de el Numeros de pagos en Anualidades Vencidas con VA
+
+Para ilustrar el ejemplo se tiene el siguiente ejercicio:
+$VA$=10015.20
+$i$=18.00% anualizado
+$r$=0.015% mensual
+$A$=500
+
+Se realizan los cálculos:
+```{r}
+# Creamos objetos con valores de entrada
+valorAct=10015.20
+tasaPeriodo=0.015
+Anualidad=500
+# Calculamos el tiempo:
+tiempo=tiempoPlazoAnualidadesVencidasA(VA=valorAct,r=tasaPeriodo,A=Anualidad)
+# Imprimimos el resultado :
+tiempo
+```
+### Calculo de la tasa del periodo en Anualidades Vencidas con VA
+
+Para ilustrar el ejemplo se tiene el siguiente ejercicio:
+$VA$=10015.20
+$t$=24 meses
+$A$=500
+
+Se realizan los cálculos:
+```{r}
+# Creamos objetos con valores de entrada
+valorAct=10015.20
+nPeriodos=24
+Anualidad=500
+# Calculamos el tasa:
+tasa=tasaAnualidadVencidaVA(VA=valorAct,Tpers=nPeriodos,A=Anualidad)
+# Imprimimos el resultado :
+tasa
 ```
