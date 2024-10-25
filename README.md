@@ -13,7 +13,7 @@ source("https://raw.githubusercontent.com/STEPHANI21/ANUALIDADES-VENCIDAS-/refs/
 ```
 
 
-### Calculo del Valor Futuro en Anualidades Vencidas 
+### Cálculo del Valor Futuro en Anualidades Vencidas 
 
 Un inversionista realiza un pago mensual de $1,200 al final de cada mes durante 5 años en una anualidad vencida que paga una tasa de interés del 6% anual, compuesta mensualmente. ¿Cuál es el valor futuro de esta inversión?
 
@@ -35,7 +35,7 @@ valorFuturo=valorFuturoAnualidadesVencidas(A=Anualidad,r=tasaPeriodo,t=nPeriodos
 valorFuturo
 ```
 
-### Calculo de la Anualidad en Anualidades Vencidas 
+### Cálculo de la Anualidad en Anualidades Vencidas con VF
 
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
 $VF$=83724.0366
@@ -54,7 +54,7 @@ Anualidad=AnualidadAnualidadesVencidasF(VF=valorFut,r=tasaPeriodo,t=nPeriodos)
 # Imprimimos el resultado :
 Anualidad
 ```
-### Calculo de el Numeros de pagos en Anualidades Vencidas 
+### Cálculo de el Numeros de pagos en Anualidades Vencidas con VF
 
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
 $VF$=83724.0366
@@ -73,7 +73,7 @@ tiempo=tiempoPlazoAnualidadesVencidasF(VF=valorFut,r=tasaPeriodo,A=Anualidad)
 # Imprimimos el resultado :
 tiempo
 ```
-### Calculo de la tasa del periodo en Anualidades Vencidas 
+### Cálculo de la tasa del periodo en Anualidades Vencidas con VF
 
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
 $VF$=83724.0366
@@ -91,9 +91,9 @@ tasa=tasaAnualidadVencidaVF(VF=valorFut,Tpers=nPeriodos,A=Anualidad)
 # Imprimimos el resultado :
 tasa
 ```
-### Calculo del Valor Actual en Anualidades Vencidas
+### Cálculo del Valor Actual en Anualidades Vencidas
 
-Una compañia vende computadoras mediante pagos mensuales vencidos de $500.00 durante 2 años.Si en estos casos se esta cargando con una tasa del 18% anual capitalizable mensualmente.
+Una compañia vende computadoras mediante pagos mensuales vencidos de $500.00 durante 2 años.Si en estos casos se esta cargando con una tasa del 18% anual capitalizable mensualmente.¿Cual es el precio de contado de esta computadora?
 
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
 $A$=500.00
@@ -112,7 +112,7 @@ valorActual=valorActualAnualidadesVencidas(A=Anualidad,r=tasaPeriodo,t=nPeriodos
 # Imprimimos el resultado :
 valorActual
 ```
-### Calculo de la Anualidad en Anualidades Vencidas CON VA
+### Cálculo de la Anualidad en Anualidades Vencidas con VA
 
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
 $VA$=10015.20
@@ -131,7 +131,7 @@ Anualidad=AnualidadAnualidadesVencidasA(VA=valorAct,r=tasaPeriodo,t=nPeriodos)
 # Imprimimos el resultado :
 Anualidad
 ```
-### Calculo de el Numeros de pagos en Anualidades Vencidas con VA
+### Cálculo de el Numeros de pagos en Anualidades Vencidas con VA
 
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
 $VA$=10015.20
@@ -150,7 +150,7 @@ tiempo=tiempoPlazoAnualidadesVencidasA(VA=valorAct,r=tasaPeriodo,A=Anualidad)
 # Imprimimos el resultado :
 tiempo
 ```
-### Calculo de la tasa del periodo en Anualidades Vencidas con VA
+### Cálculo de la tasa del periodo en Anualidades Vencidas con VA
 
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
 $VA$=10015.20
