@@ -93,20 +93,20 @@ tasa
 ```
 ### Calculo del Valor Actual en Anualidades Vencidas
 
- Una compañía alquila un terreno de $ 4 000 mensuales y propone al propietario pagar el alquiler anual al principio de año con la tasa del 12% capitalízatele mensualmente. Hallar el valor presente del alquiler.
+Una compañia vende computadoras mediante pagos mensuales vencidos de $500.00 durante 2 años.Si en estos casos se esta cargando con una tasa del 18% anual capitalizable mensualmente.
 
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
-$A$=4,000.00
-$i$=12.00% anualizado
-$r$=0.01% mensual
-$t$=12 meses
+$A$=500.00
+$i$=18.00% anualizado
+$r$=0.015% mensual
+$t$=24 meses
 
 Se realizan los cálculos:
 ```{r}
 # Creamos objetos con valores de entrada
-Anualidad=4000
-tasaPeriodo=0.01
-nPeriodos=12
+Anualidad=500
+tasaPeriodo=0.015
+nPeriodos=24
 # Calculamos el Valor Actual:
 valorActual=valorActualAnualidadesVencidas(A=Anualidad,r=tasaPeriodo,t=nPeriodos)
 # Imprimimos el resultado :
@@ -115,17 +115,17 @@ valorActual
 ### Calculo de la Anualidad en Anualidades Vencidas
 
 Para ilustrar el ejemplo se tiene el siguiente ejercicio:
-$VA$=40020.31
-$i$=12.00% anualizado
-$r$=0.01% mensual
-$t$=12 meses
+$VA$=10015.20
+$i$=18.00% anualizado
+$r$=0.015% mensual
+$t$=24 meses
 
 Se realizan los cálculos:
 ```{r}
 # Creamos objetos con valores de entrada
-valorAct=40020.31
-tasaPeriodo=0.01
-nPeriodos=12
+valorAct=10015.20
+tasaPeriodo=0.015
+nPeriodos=24
 # Calculamos la Anualidad:
 Anualidad=AnualidadAnualidadesVencidasA(VA=valorAct,r=tasaPeriodo,t=nPeriodos)
 # Imprimimos el resultado :
